@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="com.mendix.widgets.web.timeago.TimeAgo" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/@mendix/pluggable-widgets-api/widget.xsd">
+    <name>Time Ago</name>
+    <description>Render relative time</description>
+    <icon/>
+    <properties>
+        <property key="timeStamp" type="attribute">
+            <caption>Timestamp</caption>
+            <category>General</category>
+            <description/>
+            <attributeTypes>
+                <attributeType name="DateTime"/>
+            </attributeTypes>
+        </property>
+        <property key="format" type="enumeration" defaultValue="long">
+            <caption>Format</caption>
+            <category>General</category>
+            <description/>
+            <enumerationValues>
+              <enumerationValue key="long">Long</enumerationValue>
+              <enumerationValue key="narrow">Narrow</enumerationValue>
+              <enumerationValue key="short">Short</enumerationValue>
+              <enumerationValue key="tiny">Tiny</enumerationValue>
+              <enumerationValue key="twitter">Twitter</enumerationValue>
+              <enumerationValue key="time">Just time</enumerationValue>
+            </enumerationValues>
+        </property>
+    </properties>
+</widget>
